@@ -11,13 +11,12 @@ def join_nested_strings(src)
     while element_index < src[row_index].count do
       if src[row_index][element_index].is_a? String
       total << src[row_index][element_index]
-      [total].join(" ")
     end
       element_index += 1
   end
   row_index += 1
   end
-  total
+  total.join()
 end
 
 
